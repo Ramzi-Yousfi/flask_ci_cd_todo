@@ -40,4 +40,5 @@ jobs:
       with:
         push: true
         repository: ramzi22/devopspy
+        tags: test
         tag_with_ref: true
