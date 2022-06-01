@@ -31,9 +31,7 @@ jobs:
       run: |
         pytest test.py
     - name: Check docker installed or not 
-      run: docker run hello-word 
-    - name: puch to docker-hub
-      
+      run: docker run hello-word
     - name: Login to DockerHub
       uses: docker/login-action@v2
       with:
