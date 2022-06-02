@@ -40,7 +40,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
           push: true
-          tags: user/app:latest
+          tags: latest
     - name: Update repo description
       uses: peter-evans/dockerhub-description@v2
       with:
