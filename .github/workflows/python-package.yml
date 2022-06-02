@@ -52,5 +52,5 @@ jobs:
       with:
           username: ${{  secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PWD }}
-          repository: user/app
+          repository: ramzi22/devopspy
       
