@@ -30,11 +30,12 @@ jobs:
     - name: Test with pytest
       run: |
         pytest test.py
-    - name: Build & push Docker image
-      uses: mr-smithers-excellent/docker-build-push@v5
+    - name: Build and push Docker images
+      uses: docker/build-push-action@v1
       with:
-        image: ramzi22/devopspy
-        registry: .dockerfile
         username: ${{ secrets.DOCKER_USERNAME  }}
         password: ${{ secrets.DOCKER_PWD }}
+        repository: ramzi22/devopspy
+        tag_with_ref: true
+        tag_with_sha: true
       
